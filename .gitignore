@@ -1,55 +1,79 @@
-# Prerequisites
+# =======================================================
+# STM32 .gitignore 文件
+# 用于忽略 Keil MDK, STM32CubeIDE, VS Code 和构建输出
+# =======================================================
+
+# 1. Keil MDK (MDK-ARM) 自动生成的文件/文件夹
+# -------------------------------------------------------
+# Keil MDK 编译时产生的对象文件、列表文件、调试文件等
+# 这些文件通常放在项目根目录或特定的子目录中
+*.bak
 *.d
-
-# Object files
+*.dep
+*.iex
+*.htm
+*.i
+*.kln
+*.lnp
+*.mpf
+*.mpl
+*.mpt
 *.o
-*.ko
 *.obj
+*.sct
+*.tmp
+*.tra
+*.uvgui.*
+*.uvopt
+*.uvoptx
+*.uvproj
+*.uvprojx
+*.ver
+*.wsdt
+
+# Keil 自动生成的文件夹
+# 这些文件夹包含编译和调试输出
+**/Objects/
+**/Listings/
+**/RTE/
+**/_ide_version.dat
+**/__b.dep
+
+# 2. STM32CubeIDE (.cproject, .project, .mxproject 等) 自动生成文件
+# -------------------------------------------------------
+.project
+.cproject
+.mxproject
+.prefs
+.settings/
+
+# 编译输出目录 (通常是 Debug 或 Release)
+# 包含 .elf, .hex, .bin 等可执行文件
+**/Debug/
+**/Release/
+
+# 3. 常见的编译输出和可执行文件
+# -------------------------------------------------------
 *.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
 *.hex
-
-# Debug files
-*.dSYM/
+*.bin
+*.map
+*.lst
 *.su
-*.idb
-*.pdb
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# 4. VS Code (Visual Studio Code) 自动生成文件夹
+# -------------------------------------------------------
+# VS Code 的配置文件夹，用户配置或工作区配置，不应该上传
+.vscode/
 
-# debug information files
-*.dwo
+# 5. 操作系统/编辑器特定的临时文件
+# -------------------------------------------------------
+*~
+*.swp
+.DS_Store # macOS 专用
+Thumbs.db # Windows 专用
+
+# 6. STM32CubeMX 自动生成的配置/缓存文件
+# -------------------------------------------------------
+# 如果您使用 CubeMX，这些文件在生成代码后可以忽略
+*.ioc
