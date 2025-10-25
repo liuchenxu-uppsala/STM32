@@ -83,8 +83,8 @@
       <flags>2</flags>
       <showCmd>3</showCmd>
       <MinPosition>
-        <xPos>-1</xPos>
-        <yPos>-1</yPos>
+        <xPos>-32000</xPos>
+        <yPos>-32000</yPos>
       </MinPosition>
       <MaxPosition>
         <xPos>-1</xPos>
@@ -1816,17 +1816,17 @@
       <Doc>
         <Name>.\Hardware\USART.c</Name>
         <ColumnNumber>0</ColumnNumber>
-        <TopLine>1</TopLine>
-        <CurrentLine>3</CurrentLine>
+        <TopLine>70</TopLine>
+        <CurrentLine>93</CurrentLine>
         <Folding>1</Folding>
         <ContractedFolders></ContractedFolders>
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
         <Name>.\Hardware\USART.h</Name>
-        <ColumnNumber>14</ColumnNumber>
+        <ColumnNumber>6</ColumnNumber>
         <TopLine>1</TopLine>
-        <CurrentLine>4</CurrentLine>
+        <CurrentLine>10</CurrentLine>
         <Folding>1</Folding>
         <ContractedFolders></ContractedFolders>
         <PaneID>0</PaneID>
@@ -1878,9 +1878,9 @@
       </Doc>
       <Doc>
         <Name>.\User\main.c</Name>
-        <ColumnNumber>19</ColumnNumber>
+        <ColumnNumber>40</ColumnNumber>
         <TopLine>1</TopLine>
-        <CurrentLine>13</CurrentLine>
+        <CurrentLine>14</CurrentLine>
         <Folding>1</Folding>
         <ContractedFolders></ContractedFolders>
         <PaneID>0</PaneID>

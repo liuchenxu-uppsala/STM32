@@ -9,7 +9,11 @@ int main(void)
 	OLED_Init();		//OLED初始化
 	Init_USART();
 	while(1) {
-		Send_Byte(0x41);
+		Send_String("Hello World!\r\n");
+		Delay_s(1);
+		Serial_Printf("\r\nSerial_Printf Num4=%d", 444);
 		Delay_s(1);
 	}
+//	uint16_t arr[4] = {0x41,0x42,0x43,0x44};
+//	Send_Array(arr,4);
 }
